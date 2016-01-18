@@ -61,7 +61,7 @@ class RoboSpockAction implements Action<RoboSpockConfiguration> {
 		// Check gradle version, ensure >= 2.2.
 		def v = cfg.perspective.gradle.gradleVersion
 		if ( "2.2".compareTo(v) > 0 ) {
-			throw new GradleException( "RoboSpock requires gradle >= 2.2, but current is: $v" )
+			//throw new GradleException( "RoboSpock requires gradle >= 2.2, but current is: $v" )
 		}
 	}
 }
